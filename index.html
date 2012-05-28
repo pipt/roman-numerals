@@ -6,7 +6,7 @@
     <script src="roman.js"></script>
   </head>
   <body>
-    <div id="decimal"></div>
-    <input id="numerals" type="text" onkeyup="RomanNumerals.calculate();"></input>
+    <input id="decimal" type="text" onkeyup="RomanNumerals.calculate(RomanNumerals.toNumeral, 'decimal', 'numerals');"></input>
+    <input id="numerals" type="text" onkeyup="RomanNumerals.calculate(RomanNumerals.toDecimal, 'numerals', 'decimal');"></input>
   </body>
 </html>
