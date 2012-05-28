@@ -1,6 +1,7 @@
 CACHE MANIFEST
-# v1
+# v2
 
 CACHE:
 index.html
+roman.css
 roman.js

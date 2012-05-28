@@ -1,0 +1,23 @@
+body {
+  font-family:            Georgia;
+  text-align:             center;
+}
+
+ul {
+  margin:                 30px 0;
+  padding:                0;
+  list-style-type:        none;
+}
+
+li {
+  margin:                 10px 0;
+}
+
+input {
+  font-family:            Georgia;
+  font-size:              24px;
+  text-align:             center;
+  border:                 3px solid black;
+  border-radius:          100px;
+  padding:                5px;
+}

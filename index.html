@@ -3,16 +3,16 @@
   <head>
     <title>Roman Numerals</title>
 
+    <link rel="stylesheet" type="text/css" href="roman.css">
     <script src="roman.js"></script>
   </head>
   <body>
-    <p>
-      <label for="decimal">Decimal:</label>
-      <input id="decimal" name="decimal" type="text" onkeyup="RomanNumerals.calculate(RomanNumerals.toNumeral, 'decimal', 'numerals');"></input>
-    </p>
-    <p>
-      <label for="numerals">Numerals:</label>
-      <input id="numerals" name="numerals" type="text" onkeyup="RomanNumerals.calculate(RomanNumerals.toDecimal, 'numerals', 'decimal');"></input>
-    </p>
+    <h1>Roman Numerals</h1>
+    <ul>
+      <li><h3><label for="decimal">Decimal</label></h3></li>
+      <li><input id="decimal" name="decimal" type="text" onkeyup="RomanNumerals.calculate(RomanNumerals.toNumeral, 'decimal', 'numerals');"></input></li>
+      <li><h3><label for="numerals">Numerals</label></h3></li>
+      <li><input id="numerals" name="numerals" type="text" onkeyup="RomanNumerals.calculate(RomanNumerals.toDecimal, 'numerals', 'decimal');"></input></li>
+    </ul>
   </body>
 </html>
