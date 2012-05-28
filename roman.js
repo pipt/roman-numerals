@@ -8,10 +8,11 @@ if (typeof(window.RomanNumerals) === "undefined") {
         'L': 50,
         'C': 100,
         'D': 500,
-        'M': 1000
+        'M': 1000,
+        '\u2182': 10000
       },
 
-      reverseNumerals: ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'],
+      reverseNumerals: ['\u2182', 'M\u2182', 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'],
 
       toDecimal: function(numerals) {
         var sum = 0;
@@ -29,7 +30,7 @@ if (typeof(window.RomanNumerals) === "undefined") {
       },
 
       toNumeral: function(value) {
-        if (value <= 0 || value > 10000) {
+        if (value <= 0 || value > 1000000) {
           return 'N';
         }
 
