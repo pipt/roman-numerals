@@ -1,7 +1,10 @@
 CACHE MANIFEST
-# v6
+# v7
 
 CACHE:
 index.html
 roman.css
 roman.js
+
+NETWORK:
+*
