@@ -28,6 +28,11 @@ if (typeof(window.RomanNumerals) === "undefined") {
 
       valueFor: function(numeral) {
         return RomanNumerals.values[numeral.toUpperCase()] || 0;
+      },
+
+      calculate: function() {
+        var value = RomanNumerals.toDecimal(document.getElementById('numerals').value);
+        document.getElementById('decimal').innerHTML = value;
       }
     }
   })();
