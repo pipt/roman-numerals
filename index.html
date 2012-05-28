@@ -6,7 +6,13 @@
     <script src="roman.js"></script>
   </head>
   <body>
-    <input id="decimal" type="text" onkeyup="RomanNumerals.calculate(RomanNumerals.toNumeral, 'decimal', 'numerals');"></input>
-    <input id="numerals" type="text" onkeyup="RomanNumerals.calculate(RomanNumerals.toDecimal, 'numerals', 'decimal');"></input>
+    <p>
+      <label for="decimal">Decimal:</label>
+      <input id="decimal" name="decimal" type="text" onkeyup="RomanNumerals.calculate(RomanNumerals.toNumeral, 'decimal', 'numerals');"></input>
+    </p>
+    <p>
+      <label for="numerals">Numerals:</label>
+      <input id="numerals" name="numerals" type="text" onkeyup="RomanNumerals.calculate(RomanNumerals.toDecimal, 'numerals', 'decimal');"></input>
+    </p>
   </body>
 </html>
