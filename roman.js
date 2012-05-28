@@ -50,9 +50,10 @@ if (typeof(window.RomanNumerals) === "undefined") {
         return RomanNumerals.values[numeral.toUpperCase()] || 0;
       },
 
-      calculate: function() {
-        var value = RomanNumerals.toDecimal(document.getElementById('numerals').value);
-        document.getElementById('decimal').innerHTML = value;
+      calculate: function(conversionFunction, inputId, outputId) {
+        var valueToConvert = document.getElementById(inputId).value;
+        var convertedValue = conversionFunction.call(this, valueToConvert);
+        document.getElementById(outputId).value = convertedValue;
       }
     }
   })();
